@@ -2,6 +2,11 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* font-family: Roboto, Roboto-Condensed, sans-serif; */
+}
+
+html {
+    font-family: Roboto, Roboto-Condensed, sans-serif;
 }
 
 .promo {
@@ -10,7 +15,7 @@
     padding: 38px 0 62px 0;
 }
 
-.conteiner {
+.container {
     position: relative;
     width: 1140px;
     margin: 0 auto;
@@ -23,7 +28,6 @@
 
 .logo .logo_text {
     color: #FFFFFF;
-    font-family: Roboto;
     font-size: 14px;
     font-weight: 500;
    /*  line-height: 24px; */
@@ -38,7 +42,6 @@ h1 {
 
 .title {
     color: #F9BF3B;
-    font-family: Roboto;
     font-size: 41px;
     font-weight: 900;
     /* line-height: 41px; */
@@ -48,7 +51,6 @@ h1 {
 
 .simple .title_big {
     color: #FFFFFF;
-    font-family: Roboto;
     font-size: 80px;
     font-weight: 900;
     /* line-height: 80px; */
@@ -65,9 +67,8 @@ h2.title {
     padding: 0 13px;
     margin-top: 22.5px;
     color: #FFFFFF;
-    font-family: Roboto;
     font-weight: 300;
-    font-size: 21px;
+    /* font-size: 21px; */
     line-height: 28px;
     text-align: center;
    
@@ -75,8 +76,7 @@ h2.title {
 
 .promo .promo_text span {
     color: #F9BF3B;
-    font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 .promo .promo_btn {
@@ -89,7 +89,7 @@ h2.title {
     border: 4px solid rgba(0,0,0,0.23);
     background: linear-gradient(to top, #2798B9 0%, #3AB6DA 100%);
     color: #FFFFFF;
-    font-family: "Roboto Condensed";
+    font-family: Roboto-Condensed;
     font-weight: 400;
     font-size: 21px;
     text-transform: uppercase;
@@ -98,14 +98,24 @@ h2.title {
     outline: none;
 }
 
+/* .promo .promo_btn {
+    font-family: Roboto-Condensed;
+    font-weight: 400;
+} */
+
+.promo button {
+    font-family: Roboto-Condensed;
+    font-weight: 400;
+}
+
+
 .more {
     margin-top: 70px;
 }
 
 .more .more_text {
     color: #FFFFFF;
-    font-family: "Roboto - Thin";
-    font-weight: 200;
+    font-weight: 100;
     font-size: 15px;
     text-transform: uppercase;
     text-align: center;
@@ -123,16 +133,19 @@ h2.title {
     padding: 88px 0 75px 0;
 }
 
-.waiting .waiting_header {
+.waiting .waiting_header, .finish .finish_header {
     color: #252525;
-    font-family: Roboto;
     font-weight: 400;
     font-size: 30px;
     text-transform: uppercase;
     text-align: center;
 }
 
-.waiting .waiting_devider {
+.finish .finish_header {
+    color: #EFEFEF;
+}
+
+.waiting .waiting_devider, .finish .finish_devider {
     width: 220px;
     height: 7px;
     background: #F9BF3B;
@@ -143,7 +156,6 @@ h2.title {
 .waiting .waiting_subheader {
     margin-top: 18.5px;
     color: #4A4A4A;
-    font-family: Roboto;
     font-weight: 400;
     font-size: 23px;
     text-align: center;
@@ -167,7 +179,6 @@ h2.title {
 .waiting .waiting_wrappers .waiting_description {
     margin-top: 26px;
     color: #4A4A4A;
-    font-family: Roboto;
     font-weight: 300;
     font-size: 15px;
     line-height: 21px;
@@ -181,7 +192,6 @@ h2.title {
 .optimization .optimization_header {
     margin-left: 391px;
     color: #299CBD;
-    font-family: Roboto;
     font-weight: 900;
     font-size: 30px;
     text-transform: uppercase;
@@ -191,15 +201,13 @@ h2.title {
     margin-top: 25px;
     margin-left: 391px;
     color: #4A4A4A;
-    font-family: Roboto;
     font-weight: 300;
     font-size: 17px;
     line-height: 27px;
 }
 
 .optimization .optimization_text span {
-    font-family: Roboto;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 17px;
     line-height: 27px;
 }
@@ -208,5 +216,146 @@ h2.title {
     position: absolute;
     top: -54px;
     left: -240px;
-    /* z-index: -1; */
+    z-index: -1;
 }
+
+.finish {
+    min-height: 447px;
+    padding: 86px 0 67px 0;
+    background: url('../img/second_bg.jpg') center center/cover no-repeat;
+}
+
+.finish .finish_wrapper {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.finish .finish_wrapper .finish_item {
+    width: 234px;
+}
+
+.finish .finish_wrapper .finish_item .finish_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 115px;
+    height: 115px;
+    background: #B4E2FF;
+    border-radius: 100%;
+}
+
+.finish .finish_wrapper .finish_item .finish_descr {
+    margin-top: 25px;
+    text-align: center;
+    color: #EFEFEF;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.intesive {
+    min-height: 630px;
+    padding: 85px 0 88px 0;
+    background-color: #EFEFEF;
+}
+
+.intesive .gift_logo {
+    display: block;
+    margin: 0 auto;
+}
+
+.intesive .gift_text {
+    margin-top: 45px;
+    color: #252525;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.intesive .gift_btn {/*  почему не работает добавление гифт к уже существующеей кнопке???? */
+    display: block;
+    margin-top: 50px;
+    margin: 50px auto;   
+    width: 313px;
+    height: 72px;
+    background: linear-gradient(0deg, #2798B9 0%, #3AB6DA 100%);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    color: #FFFFFF;
+    text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.22);
+    font-family: "Roboto Condensed";
+    font-weight: normal;
+    font-size: 21px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.first {
+    min-height: 512px;
+    padding: 81px 0 53px 0;
+    background: #FFFFFF;
+}
+
+.first .first_img {
+    display: block;
+    margin: 0 auto;
+}
+
+.first .first_text {
+    margin-top: 36px;
+    color: #252525;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first .date {
+    margin-top: 30px;
+    color: #299CBD;
+    font-weight: 900;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.first .first_subtitle {
+    margin-top: 25px;
+    color: #4A4A4A;
+    font-weight: 400;
+    font-size: 23px;
+    text-align: center;
+}
+
+footer {
+    min-height: 169px;
+    background: #1A1A1A;
+    padding: 57px 0 69px 0;
+}
+
+.info {
+    margin: 0 auto;
+    width: 407px;
+    color: #888888;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+}
+
+footer a {
+    color: #888888;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    text-decoration: none;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
